@@ -17,14 +17,10 @@ export default class AuthPage extends Component {
                     <div className="row justify-content-around authButton">
 
                         <div className="col-xs-2">
-                            <button className="p-3 m-4 btn btn-outline-dark btn-lg">
-                                SE CONNECTER
-                            </button>
+                            <NavLink className="btn-auth" to="/login">SE CONNECTER</NavLink>
                         </div>
                         <div className="col-xs-2">
-                            <button className="p-3 m-4 btn btn-outline-dark btn-lg">
-                                S'INSCRIRE
-                            </button>
+                            <NavLink className="btn-auth" to="/signup">S'INSCRIRE</NavLink>
                         </div>
 
                     </div> 
