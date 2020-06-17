@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { NavLink, Link, Redirect } from 'react-router-dom';
 
 export default class AuthPage extends Component {
     render() {
