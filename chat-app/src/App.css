@@ -3,11 +3,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&display=swap');
 
-#title {
+#title a{
     font-size: 40px;
-    color: #918984;
+    color: #cec0b8;
     font-weight: 700;
     font-family: 'Merriweather Sans', cursive;
+    transition: .4s;
+}
+#title a:hover {
+    text-decoration: none;
+    color: #ffffff;
 }
 #heading {
     color: #ffffff;
@@ -18,7 +23,7 @@
 }
 #heading-p {
     font-size: 22px;
-    color: #918984;
+    color: #cec0b8;
     padding-top: 10px;
     font-family: 'Merriweather', cursive;
     font-weight: 500;
@@ -30,7 +35,7 @@ hr {
 }
 
 #background {
-    background-image: url('D:/_Programmation_/ChatApp/chat-app/src/Img/Background.jpg');
+    background-image: url('D:/_Programmation_/ChatApp/chat-app/src/Img/Background2.jpg');
     position: absolute;
     top: 0;
     right: 0;
@@ -40,4 +45,18 @@ hr {
     opacity: .85;
     background-size: cover;
     filter: brightness(35%)   
+}
+
+#btnAuth {
+    padding: 12px 35px;
+    font-size: 22px;
+    font-family: "Merriweather", cursive;
+    background: #f4623a;
+    color: #ffffff;
+    transition: .4s ease-in-out;
+} 
+#btnAuth:hover{
+    background: #cec0b8;
+    color: #333333;
+    border: none;
 }
