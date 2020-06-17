@@ -1,15 +1,19 @@
-import React from 'react'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Landing = () => {
     return (
         <div className="text-center">
             <div id="background">
             </div>
-            <span id="title" className="lead">Converso</span>
+            <span id="title" className="lead"><a href="/">Converso</a></span>
 
-            <h1 id="heading">Welcome to my new app!<br />Here you can have good time with your friends</h1>
+            <h1 id="heading">Chat with people around the world</h1>
                 <hr />
-            <p className="lead" id="heading-p">It's time to log into your account!<br />If you don't have one, please register!</p>
+            <p className="lead" id="heading-p">Please login to your account!<br />If you don't have, register to create new one</p>
+
+            <NavLink to="/login" className="btn btn-outline-light btn-lg mr-5 mt-4" id="btnAuth">Login</NavLink>
+            <NavLink to="/register" className="btn btn-light btn-lg ml-5 mt-4" id="btnAuth">Register</NavLink>
         </div>
     )
 }
