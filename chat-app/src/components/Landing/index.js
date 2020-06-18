@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import Footer from '../Footer';
 
 const Landing = () => {
     return (
@@ -12,8 +13,8 @@ const Landing = () => {
                 <hr />
             <p className="lead" id="heading-p">Please login to your account!<br />If you don't have, register to create new one</p>
 
-            <NavLink to="/login" className="btn btn-outline-light btn-lg mr-5 mt-4" id="btnAuth">Login</NavLink>
-            <NavLink to="/register" className="btn btn-light btn-lg ml-5 mt-4" id="btnAuth">Register</NavLink>
+            <NavLink to="/login" className="btn btn-outline-light btn-lg mt-4" id="btnAuth">Login</NavLink>
+            <NavLink to="/register" className="btn btn-light btn-lg mt-4" id="btnAuth">Register</NavLink>
         </div>
     )
 }

@@ -44,7 +44,7 @@ hr {
     z-index: -1;
     opacity: .85;
     background-size: cover;
-    filter: brightness(35%)   
+    filter: brightness(35%);
 }
 
 #btnAuth {
@@ -54,9 +54,16 @@ hr {
     background: #f4623a;
     color: #ffffff;
     transition: .4s ease-in-out;
+    margin: 0px 50px;
 } 
 #btnAuth:hover{
     background: #cec0b8;
     color: #333333;
     border: none;
+}
+
+@media screen and (max-width: 500px) {
+    #heading {
+        padding-top: 75px;
+    }
 }
