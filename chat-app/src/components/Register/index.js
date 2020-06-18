@@ -9,7 +9,7 @@ const Register = () => {
             <div id="background"></div>
             <span id="title" className="lead"><a href="/">Converso</a></span>
 
-            {/* Login Form */}
+            {/* Register Form */}
             <div id="signUpBox">
                 <h6 className="display-4">Sign Up</h6>
                 <form>
