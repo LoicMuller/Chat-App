@@ -15,12 +15,12 @@ const Login = () => {
                 <form>
                     <div className="inputBox">
                         <input  type="email" autoComplete="off" required />
-                        <label htmlForm="email">Email</label>
+                        <label htmlFor="email">Email</label>
                     </div>
                     
                     <div className="inputBox">
                         <input  type="password" autoComplete="off" required />
-                        <label htmlForm="password">Password</label>
+                        <label htmlFor="password">Password</label>
                     </div>
 
                     <button>Login</button>
