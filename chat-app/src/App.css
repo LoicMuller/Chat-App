@@ -251,6 +251,9 @@ button[disabled]:hover {
     opacity: 0.65;
     cursor: not-allowed;
 }
+
+
+/* MEDIA QUERIES */
 @media screen and (max-width: 800px) {
     #signUpBox {
         width: 75%;
