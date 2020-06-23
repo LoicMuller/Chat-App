@@ -10,6 +10,7 @@ import Footer from '../Footer';
 import Login from '../Login';
 import Register from '../Register';
 import ForgetPassword from '../ForgetPassword';
+import Home from '../Home';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/login" component={Login} />
           <Route path="/register" component={Register} />
           <Route path="/forgetpassword" component={ForgetPassword} />
+          <Route path="/home" component={Home} />
         </Switch>
         <Route path="/" component={Footer} />
       </Router>
