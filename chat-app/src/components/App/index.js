@@ -13,17 +13,17 @@ import ForgetPassword from '../ForgetPassword';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Router>
         <Switch>
           <Route exact path="/" component={Landing} />
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/register" component={Register} />
-          <Route exact path="/forgetpassword" component={ForgetPassword} />
+          <Route path="/login" component={Login} />
+          <Route path="/register" component={Register} />
+          <Route path="/forgetpassword" component={ForgetPassword} />
         </Switch>
         <Route path="/" component={Footer} />
       </Router>
-    </div>
+    </>
   );
 }
 
