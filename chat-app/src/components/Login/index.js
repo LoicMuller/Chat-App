@@ -23,7 +23,7 @@ const Login = () => {
                         <label htmlFor="password">Password</label>
                     </div>
 
-                    <button>Login</button>
+                    <button>Log in</button>
                 </form>
                 <div className="linkContainer">
                     <Link className="simpleLink" to="/register">Do not have an account yet?</Link>
