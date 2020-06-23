@@ -11,7 +11,7 @@ const Landing = () => {
                 <hr id="landingHr"/>
             <p className="lead" id="heading-p">Please login to your account!<br />If you don't have, register to create new one</p>
 
-            <NavLink to="/login" className="btn btn-outline-light btn-lg mt-4" id="btnAuth">Login</NavLink>
+            <NavLink to="/login" className="btn btn-outline-light btn-lg mt-4" id="btnAuth">Log in</NavLink>
             <NavLink to="/register" className="btn btn-light btn-lg mt-4" id="btnAuth">Register</NavLink>
         </div>
     )
