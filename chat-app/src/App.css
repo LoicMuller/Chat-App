@@ -252,6 +252,15 @@ button[disabled]:hover {
     cursor: not-allowed;
 }
 
+/* ERROR MSG */
+#signUpBox span {
+    display: block;
+    color: #EB1D27;
+    text-align: center;
+    border: 1px solid#EB1D27;
+    padding: 8px;
+    margin: 5px 0; 
+}
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 800px) {
