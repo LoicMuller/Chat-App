@@ -270,6 +270,36 @@ button[disabled]:hover {
     margin: 5px 0; 
 }
 
+/* NAVBAR */
+.navList {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-top: 20px;
+}
+.navList li {
+    margin: 0 50px;
+    font-family: 'Merriweather', cursive;
+    font-size: 24px;
+}
+.navList li a {
+    color: #cec09d;
+    transition: .3s;
+}
+.navList li :hover {
+    text-decoration: none;
+    color: #ebe2ce;
+}
+#backgroundColor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left, #4f5267, #53576d, #585b74, #5c607a, #616581);
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 800px) {
     #signUpBox {
