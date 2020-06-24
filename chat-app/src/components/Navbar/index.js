@@ -25,6 +25,8 @@ const Navbar = () => {
                     <li><Link to="/friends">Friends</Link></li>
                     <li><Link to="/groups">Groups</Link></li>
                     <li><Link to="/" onClick={handleClick}>Logout</Link></li>
+
+                    <i className="fas fa-bars" id="navIcon"></i>
                 </ul>
             </nav>
         </>

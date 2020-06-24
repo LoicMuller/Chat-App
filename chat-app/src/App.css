@@ -279,6 +279,9 @@ button[disabled]:hover {
     width: 100%;
     text-align: center;
 }
+.navList i {
+    display: none;
+}
 .navList li {
     vertical-align: top;
     display: inline-block;
@@ -348,6 +351,17 @@ button[disabled]:hover {
         width: 75%;
         height: 60vh;
         overflow: scroll;
+    }
+    .navList li {
+        display: none;
+    }
+    .navList i {
+        display: block;
+        color: #cec09d;
+        font-size: 30px;
+        float: right;
+        margin-right: 20px;
+        cursor: pointer;
     }
 }
 @media screen and (max-width: 500px) {
