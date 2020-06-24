@@ -17,15 +17,17 @@ const Navbar = () => {
     }
 
     return (
-        <nav>
+        <>
             <div id="backgroundColor"></div>
-            <ul className="navList">
-                <li><Link to="/profile">Profile</Link></li>
-                <li><Link to="/friends">Friends</Link></li>
-                <li><Link to="/groups">Groups</Link></li>
-                <li><Link to="/" onClick={handleClick}>Logout</Link></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul className="navList">
+                    <li><Link to="/profile">Profile</Link></li>
+                    <li><Link to="/friends">Friends</Link></li>
+                    <li><Link to="/groups">Groups</Link></li>
+                    <li><Link to="/" onClick={handleClick}>Logout</Link></li>
+                </ul>
+            </nav>
+        </>
     )
 }
 
