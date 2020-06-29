@@ -290,6 +290,7 @@ button[disabled]:hover {
     font-size: 24px;
 }
 .navList li a {
+    text-transform: capitalize;
     padding: 50px;
     text-align: center;
     color: #cec09d;
@@ -298,6 +299,7 @@ button[disabled]:hover {
 .navList li :hover {
     text-decoration: none;
     color: #ebe2ce;
+    filter: drop-shadow(0px 10px .75rem #ebe2ce);
 }
 #backgroundColor {
     position: absolute;
@@ -393,5 +395,13 @@ button[disabled]:hover {
     #signUpBox {
         margin-top: 30px;
         height: 70vh;
+    }
+}
+@media screen and (max-height: 600px) {
+    .sideBar {
+        top: 12vh;
+    }
+    .navList li a {
+        padding: 30px;
     }
 }
