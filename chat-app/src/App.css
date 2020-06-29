@@ -299,7 +299,9 @@ button[disabled]:hover {
 .navList li :hover {
     text-decoration: none;
     color: #ebe2ce;
-    filter: drop-shadow(0px 10px .75rem #ebe2ce);
+    filter: drop-shadow(0px 10px 0.75rem #ebe2ce);
+    text-shadow: 4px 2px #2c2c38;
+    font-size: 24.5px;
 }
 #backgroundColor {
     position: absolute;
@@ -349,6 +351,29 @@ button[disabled]:hover {
     transform: rotate(360deg);
     }
 }
+
+/* CONTENT HOME PAGE */
+.homeContent {
+    padding-top: 100px;
+    font-family: 'Merriweather Sans', cursive;
+    text-align: center;
+}
+.homeContent h1 {
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 50px;
+    color: #212529;
+}
+.homeContent p {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 24px;
+    color: #212529;
+}
+.homeContent p a {
+    color: #cec09d;
+}
+
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 800px) {
@@ -400,8 +425,5 @@ button[disabled]:hover {
 @media screen and (max-height: 600px) {
     .sideBar {
         top: 12vh;
-    }
-    .navList li a {
-        padding: 30px;
     }
 }
