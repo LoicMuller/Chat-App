@@ -22,8 +22,14 @@ const Register = props => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        const { email, password } = loginData;
+        const { email, password, username } = loginData;
         firebase.signUpUser(email, password)
+        .then( authUser => {
+            return firebase.user(authUser.user.uid).set({
+                username,
+                email,
+            })
+        })
         .then(user => {
             setLoginData({ ...data });
             props.history.push('/home');

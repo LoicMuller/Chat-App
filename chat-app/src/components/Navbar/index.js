@@ -2,7 +2,9 @@ import React, { useContext } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { FirebaseContext } from '../Firebase';
 
-const Navbar = () => {
+const Navbar = props => {
+
+    const { username } = props.userData;
 
     const firebase = useContext(FirebaseContext);
 
@@ -26,7 +28,7 @@ const Navbar = () => {
             <div id="backgroundColor"></div>
             <nav>
                 <ul className="navList">
-                    <li><Link to="/profile">Profile</Link></li>
+                    <li><Link to="/profile">{username}</Link></li>
                     <li><Link to="/friends">Friends</Link></li>
                     <li><Link to="/groups">Groups</Link></li>
                     <li><Link to="/" onClick={handleClick}>Logout</Link></li>
@@ -34,7 +36,7 @@ const Navbar = () => {
                     <i className="fas fa-bars" id="navIcon" onClick={openSideBar}></i>
                     <div className="sideBar">
                         <ul>
-                            <li><Link to="/profile">Profile</Link></li>
+                            <li><Link to="/profile">{username}</Link></li>
                             <li><Link to="/friends">Friends</Link></li>
                             <li><Link to="/groups">Groups</Link></li>
                             <li><Link to="/" onClick={handleClick}>Logout</Link></li>
