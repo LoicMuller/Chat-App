@@ -12,6 +12,7 @@ import Register from '../Register';
 import ForgetPassword from '../ForgetPassword';
 import Profile from '../Profile';
 import Rooms from '../Rooms';
+import ErrorPage from '../404';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/forgetpassword" component={ForgetPassword} />
           <Route path="/profile" component={Profile} />
           <Route path="/rooms" component={Rooms} />
+          <Route component={ErrorPage} />
         </Switch>
         <Route path="/" component={Footer} />
       </Router>
