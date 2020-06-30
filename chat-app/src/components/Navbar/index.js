@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 import { FirebaseContext } from '../Firebase';
 
 const Navbar = () => {
@@ -26,16 +26,16 @@ const Navbar = () => {
             <div id="backgroundColor"></div>
             <nav>
                 <ul className="navList">
-                    <li><Link to="/profile">Profile</Link></li>
-                    <li><Link to="/rooms">Rooms</Link></li>
-                    <li><Link to="/" onClick={handleClick}>Logout</Link></li>
+                    <li><NavLink to="/profile">Profile</NavLink></li>
+                    <li><NavLink to="/rooms">Rooms</NavLink></li>
+                    <li><NavLink to="/" onClick={handleClick}>Logout</NavLink></li>
                     
                     <i className="fas fa-bars" id="navIcon" onClick={openSideBar}></i>
                     <div className="sideBar">
                         <ul>
-                            <li><Link to="/profile">Profile</Link></li>
-                            <li><Link to="/rooms">Rooms</Link></li>
-                            <li><Link to="/" onClick={handleClick}>Logout</Link></li>
+                            <li><NavLink to="/profile">Profile</NavLink></li>
+                            <li><NavLink to="/rooms">Rooms</NavLink></li>
+                            <li><NavLink to="/" onClick={handleClick}>Logout</NavLink></li>
                         </ul>
                     </div>
                 </ul>
