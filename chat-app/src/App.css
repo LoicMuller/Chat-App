@@ -374,6 +374,10 @@ button[disabled]:hover {
     color: #cec09d;
 }
 
+/* ACTIVE NAVLINK */
+.selected {
+    text-decoration: underline;
+}
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 800px) {

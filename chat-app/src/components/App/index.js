@@ -11,6 +11,8 @@ import Login from '../Login';
 import Register from '../Register';
 import ForgetPassword from '../ForgetPassword';
 import Home from '../Home';
+import Profile from '../Profile';
+import Rooms from '../Rooms';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path="/register" component={Register} />
           <Route path="/forgetpassword" component={ForgetPassword} />
           <Route path="/home" component={Home} />
+          <Route path="/profile" component={Profile} />
+          <Route path="/rooms" component={Rooms} />
         </Switch>
         <Route path="/" component={Footer} />
       </Router>

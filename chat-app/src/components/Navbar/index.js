@@ -26,15 +26,15 @@ const Navbar = () => {
             <div id="backgroundColor"></div>
             <nav>
                 <ul className="navList">
-                    <li><NavLink to="/profile">Profile</NavLink></li>
-                    <li><NavLink to="/rooms">Rooms</NavLink></li>
+                    <li><NavLink to="/profile" activeClassName="selected">Profile</NavLink></li>
+                    <li><NavLink to="/rooms" activeClassName="selected">Rooms</NavLink></li>
                     <li><NavLink to="/" onClick={handleClick}>Logout</NavLink></li>
                     
                     <i className="fas fa-bars" id="navIcon" onClick={openSideBar}></i>
                     <div className="sideBar">
                         <ul>
-                            <li><NavLink to="/profile">Profile</NavLink></li>
-                            <li><NavLink to="/rooms">Rooms</NavLink></li>
+                            <li><NavLink to="/profile" activeClassName="selected">Profile</NavLink></li>
+                            <li><NavLink to="/rooms" activeClassName="selected">Rooms</NavLink></li>
                             <li><NavLink to="/" onClick={handleClick}>Logout</NavLink></li>
                         </ul>
                     </div>
