@@ -286,9 +286,8 @@ button[disabled]:hover {
 }
 .navList li :hover {
     text-decoration: none;
-    color: #ebe2ce;
-    filter: drop-shadow(0px 10px 0.75rem #ebe2ce);
-    text-shadow: 4px 2px #2c2c38;
+    color: #c4c4c4;
+    filter: brightness(100%);
     font-size: 24.5px;
 }
 #backgroundColor {
@@ -394,55 +393,6 @@ a.selected:hover {
 }
 .btnBack:focus {
     outline: none;
-}
-
-/* PROFILE CONTENT */
-.profileH1 {
-    margin-top: 100px;
-    font-family: 'Merriweather Sans', cursive;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 45px;
-    color: #c4c4c4;
-    text-transform: capitalize;
-}
-.iconProfile {
-    margin-top: 30px;
-}
-.iconProfile span {
-    font-size: 72px;
-    vertical-align: 0%;
-}
-.btnPicChanger {
-    margin-top: 20px;
-    border-radius: 100px;
-    padding: 10px 40px;
-    text-transform: uppercase;
-    text-decoration: none;
-    background: transparent;
-    font-family: 'Merriweather Sans', cursive;
-    font-weight: 400;
-    color: #ffffff;
-    font-size: 16px;
-    border-style: none;
-    border: 1px solid #c4c4c4;
-    transition: all .3s ease-in;
-    cursor: pointer;
-}
-.btnPicChanger:hover {
-    background: #686767;
-}
-.btnPicChanger:focus {
-    outline: none;
-}
-/* input[type="file"] {
-    display: none;
-} */
-#cameraIcon {
-    font-size: 30px;
-    color: #c4c4c4;
-    cursor: pointer
 }
 
 
