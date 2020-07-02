@@ -25,7 +25,7 @@ const Login = props => {
         .then(user => {
             setEmail('');
             setPassword('');
-            props.history.push('/profile');
+            props.history.push('/home');
         })
         .catch(error => {
             setError(error);

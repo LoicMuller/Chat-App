@@ -10,9 +10,8 @@ import Footer from '../Footer';
 import Login from '../Login';
 import Register from '../Register';
 import ForgetPassword from '../ForgetPassword';
-import Profile from '../Profile';
-import Rooms from '../Rooms';
 import ErrorPage from '../404';
+import Home from '../Home';
 
 function App() {
   return (
@@ -23,8 +22,7 @@ function App() {
           <Route path="/login" component={Login} />
           <Route path="/register" component={Register} />
           <Route path="/forgetpassword" component={ForgetPassword} />
-          <Route path="/profile" component={Profile} />
-          <Route path="/rooms" component={Rooms} />
+          <Route path="/home" component={Home} />
           <Route component={ErrorPage} />
         </Switch>
         <Route path="/" component={Footer} />
