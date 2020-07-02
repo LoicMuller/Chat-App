@@ -23,7 +23,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div id="backgroundColor"></div>
+            <div id="background"></div>
             <nav>
                 <ul className="navList">
                     <li><NavLink to="/home" activeClassName="selected">Home</NavLink></li>
