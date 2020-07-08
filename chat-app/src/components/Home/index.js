@@ -11,7 +11,7 @@ const Home = props => {
 
     const [userData, setUserData] = useState({});
 
-    // const username = userData.username;
+    const username = userData.username;
 
     useEffect(() => {
         let listener = firebase.auth.onAuthStateChanged(user => {
@@ -47,7 +47,7 @@ const Home = props => {
     ) : (
         <>
             <Navbar />
-            {/* <p>Welcome, {username}</p> */}
+            <p className="text-capitalize">Welcome, {username}</p>
         </>
     )
 }
