@@ -12,6 +12,7 @@ import Register from '../Register';
 import ForgetPassword from '../ForgetPassword';
 import ErrorPage from '../404';
 import Home from '../Home';
+import Chat from '../Chat';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/register" component={Register} />
           <Route path="/forgetpassword" component={ForgetPassword} />
           <Route path="/home" component={Home} />
+          <Route path="/chat" component={Chat} />
           <Route component={ErrorPage} />
         </Switch>
         <Route path="/" component={Footer} />
