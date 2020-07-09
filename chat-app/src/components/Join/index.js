@@ -59,13 +59,13 @@ const Join = props => {
     ) : (
         <>
             <div id="background"></div>
-                <div id="joinContainer">
-                    <h6 className="display-4">Join</h6>
-                    <div className="inputBox">
-                        <input onChange={(event) => setRoom(event.target.value)} placeholder="Please enter a room" type="text"/>
-                        <Link onClick={event => (!room ? event.preventDefault() : null)} to={`/chat?name=${username}&room=${room}`}>
-                            { btn ? <button>Go</button> : <button disabled>Go</button> }
-                        </Link>
+            <div id="joinContainer">
+                <h6 className="display-4">Join</h6>
+                <div className="inputBox">
+                    <input onChange={(event) => setRoom(event.target.value)} placeholder="Please enter a room" type="text"/>
+                    <Link onClick={event => (!room ? event.preventDefault() : null)} to={`/chat?name=${username}&room=${room}`}>
+                        { btn ? <button>Go</button> : <button disabled>Go</button> }
+                    </Link>
                 </div>
             </div>
         </>
