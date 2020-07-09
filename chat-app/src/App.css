@@ -136,6 +136,9 @@
     border: 1px solid #f4623a;
     background-color: transparent;
 }
+#loginBox button:focus {
+    outline: none;
+}
 button:disabled,
 button[disabled],
 button:disabled:hover,
@@ -226,6 +229,9 @@ button[disabled]:hover {
 #signUpBox button:hover {
     border: 1px solid #f4623a;
     background-color: transparent;
+}
+#signUpBox button:focus {
+    outline: none;
 }
 button:disabled,
 button[disabled],
