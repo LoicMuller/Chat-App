@@ -63,3 +63,18 @@ button, a:disabled:hover,
 button[disabled]:hover {
     color: white;
 }
+@media screen and (max-width: 850px) {
+    #joinContainer {
+        height: 60vh;
+        width: 80%;
+        overflow: scroll;
+    }
+    .inputBox {
+        margin-top: 0;
+    }
+}
+@media screen and (max-height: 600px) {
+    .inputBox button {
+        margin-top: 50px;
+    }
+}
