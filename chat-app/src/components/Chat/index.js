@@ -13,7 +13,7 @@ import './chat.css';
 let socket;
 
 const Chat = ({ location, history }) => {
-    const ENDPOINT = 'localhost:5000';
+    const ENDPOINT = 'https://converso-app.herokuapp.com/';
 
     const firebase = useContext(FirebaseContext);
 
