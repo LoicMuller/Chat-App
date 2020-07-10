@@ -26,3 +26,12 @@ input:focus, textarea:focus, select:focus,
     border: none;
     width: 20%;
 }
+
+@media screen and (max-width: 500px) {
+    .sendButton {
+        width: 30%;
+    }
+    .input {
+        width: 70%;
+    }
+  }

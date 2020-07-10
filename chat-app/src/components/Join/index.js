@@ -49,6 +49,14 @@ const Join = props => {
         };
 
     }, [userSession, firebase, props.history])
+    
+    const handleClick = e => {
+        e.preventDefault();
+        firebase.signOutUser()
+        .then(() => {
+            props.history.push('/');
+        })
+    }
 
     return userSession === null ? (
         <>
@@ -59,9 +67,12 @@ const Join = props => {
     ) : (
         <>
             <div id="background"></div>
+            <ul className="navList2">
+                <li><a href="/" onClick={handleClick}>Logout</a></li>
+            </ul>
             <div id="joinContainer">
                 <h6 className="display-4">Join</h6>
-                <div className="inputBox">
+                <div className="inputBox2">
                     <input onChange={(event) => setRoom(event.target.value)} placeholder="Please enter a room" type="text"/>
                     <Link onClick={event => (!room ? event.preventDefault() : null)} to={`/chat?name=${username}&room=${room}`}>
                         { btn ? <button>Go</button> : <button disabled>Go</button> }

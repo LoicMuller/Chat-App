@@ -32,7 +32,7 @@ const Register = props => {
         })
         .then(user => {
             setLoginData({ ...data });
-            props.history.push('/home');
+            props.history.push('/join');
         })
         .catch(error => {
             setError(error);

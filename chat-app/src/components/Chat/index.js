@@ -6,6 +6,7 @@ import InfoBar from '../InfoBar';
 import Input from '../Input';
 import Messages from '../Messages';
 import TextContainer from '../TextContainer';
+import Navbar from '../Navbar';
 
 import './chat.css';
 
@@ -96,6 +97,7 @@ const Chat = ({ location, history }) => {
         </> 
     ) : (
         <>
+            <Navbar />
             <div className="outerContainer">
                 <div id="background"></div>
                 <div className="innerContainer">

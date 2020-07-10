@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
 }
   
 .innerContainer {
@@ -15,7 +15,7 @@
     border: 3px solid #ffffffb9;
 }
   
-@media (min-width: 320px) and (max-width: 480px) {
+/* @media (min-width: 320px) and (max-width: 480px) {
     .outerContainer {
       height: 100%;
     }
@@ -30,4 +30,27 @@
     .container {
       width: 60%;
     }
+} */
+@media screen and (max-width: 1100px) {
+  .innerContainer {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .innerContainer {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .innerContainer {
+    width: 75%;
+  }
+}
+@media (max-width: 350px) and (max-height: 580px) {
+  .outerContainer {
+    height: 75vh;
+  }
+  .innerContainer {
+    height: 80%;
+  }
 }
