@@ -1,6 +1,6 @@
 # Welcome to my first real *"big"* project which is not that big but i'm a little proud of it
 
-*Converso is a chat application where you can chat with your friends on a same room*
+*[Converso](https://converso.netlify.app) is a chat application where you can chat with your friends on a same room*
 
 ![Home Page](https://github.com/LoicMuller/Chat-App/blob/master/chat-app/src/Img/homeBackgroundForGH.PNG)
 
