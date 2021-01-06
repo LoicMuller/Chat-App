@@ -7,6 +7,7 @@ import Input from "../Input";
 import Messages from "../Messages";
 import TextContainer from "../TextContainer";
 import Navbar from "../Navbar";
+import backgroundImg from "../../Img/Background2.jpg";
 
 import "./chat.css";
 
@@ -97,7 +98,9 @@ const Chat = ({ location, history }) => {
     <>
       <Navbar />
       <div className="outerContainer">
-        <div id="background"></div>
+        <div id="background">
+          <img src={backgroundImg} alt="background" />
+        </div>
         <div className="innerContainer">
           <InfoBar room={room} />
           <Messages messages={messages} name={name} />

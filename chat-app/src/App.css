@@ -35,15 +35,9 @@
 }
 
 #background {
-  background-image: url("C:/Users/loicm/_Programmation_/projects/converso/Chat-App/chat-app/src/Img/Background2.jpg");
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  position: fixed;
   z-index: -1;
   opacity: 0.85;
-  background-size: cover;
   filter: brightness(35%);
 }
 

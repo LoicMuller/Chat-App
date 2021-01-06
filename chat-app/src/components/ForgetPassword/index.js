@@ -1,79 +1,89 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { useContext } from 'react';
-import { useState } from 'react';
-import { FirebaseContext } from '../Firebase';
+import React from "react";
+import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { useState } from "react";
+import { FirebaseContext } from "../Firebase";
+import backgroundImg from "../../Img/Background2.jpg";
 
-const ForgetPassword = props => {
+const ForgetPassword = (props) => {
+  const firebase = useContext(FirebaseContext);
 
-    const firebase = useContext(FirebaseContext);
+  const [email, setEmail] = useState("");
+  const [success, setSuccess] = useState(null);
+  const [error, setError] = useState(null);
 
-    const [email, setEmail] = useState("");
-    const [success, setSuccess] = useState(null);
-    const [error, setError] = useState(null);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    firebase
+      .passwordReset(email)
+      .then(() => {
+        setError(null);
+        setSuccess(`Check your mail ${email} to reset your password`);
+        setEmail("");
 
-    const handleSubmit = e => {
-        e.preventDefault();
-        firebase.passwordReset(email)
-        .then(() => {
-            setError(null);
-            setSuccess(`Check your mail ${email} to reset your password`);
-            setEmail("");
+        setTimeout(() => {
+          props.history.push("/login");
+        }, 5000);
+      })
+      .catch((error) => {
+        setError(error);
+        setEmail("");
+      });
+  };
 
-            setTimeout(() => {
-                props.history.push('/login');
-            }, 5000)
-        })
-        .catch(error => {
-            setError(error);
-            setEmail("");
-        })
-    };
+  const disabled = email === "";
 
-    const disabled = email === "";
+  return (
+    <div className="text-center">
+      {/* Header + Background */}
+      <div id="background">
+        <img src={backgroundImg} alt="background" />
+      </div>
+      <span id="title" className="lead">
+        <a href="/">Converso</a>
+      </span>
 
-    return (
-        <div className="text-center">
+      {/* ForgotPass Form */}
+      <div id="loginBox">
+        {success && (
+          <span
+            style={{
+              border: "1px solid green",
+              background: "green",
+              color: "#ffffff",
+            }}
+          >
+            {success}
+          </span>
+        )}
 
-            {/* Header + Background */}
-            <div id="background"></div>
-            <span id="title" className="lead"><a href="/">Converso</a></span>
+        {error && <span>{error.message}</span>}
 
-            {/* ForgotPass Form */}
-            <div id="loginBox">
+        <h6 className="display-4">Forget Password</h6>
 
-                {
-                    success && <span
-                        style={{
-                            border: "1px solid green",
-                            background: "green",
-                            color: "#ffffff"
-                        }}
-                    >
-                        {success}
-                    </span>
-                }
+        <form onSubmit={handleSubmit}>
+          <div className="inputBox">
+            <input
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
+              type="email"
+              autoComplete="off"
+              required
+            />
+            <label htmlFor="email">Email</label>
+          </div>
 
-                {error && <span>{error.message}</span>}
+          <button disabled={disabled}>Retrieve</button>
+        </form>
 
-                <h6 className="display-4">Forget Password</h6>
+        <div className="linkContainer">
+          <Link className="simpleLink" to="/login">
+            Already have an account?
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-                <form onSubmit={handleSubmit}>
-                    <div className="inputBox">
-                        <input onChange={e => setEmail(e.target.value)} value={email} type="email" autoComplete="off" required />
-                        <label htmlFor="email">Email</label>
-                    </div>
-                    
-                    <button disabled={disabled}>Retrieve</button>
-                </form>
-
-                <div className="linkContainer">
-                    <Link className="simpleLink" to="/login">Already have an account?</Link>
-                </div>
-            </div>
-
-        </div>   
-    )
-}
-
-export default ForgetPassword
+export default ForgetPassword;
