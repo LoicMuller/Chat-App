@@ -1,4 +1,6 @@
-# Welcome to my first real *"big"* project which is not that big but i'm a little proud of it
+# THE APPLICATION DOESN'T WORK ANYMORE. HAVE TO FIX PROBLEMS WITH IT ASAP
+
+## Welcome to my first real *"big"* project which is not that big but i'm a little proud of it
 
 *[Converso](https://converso.netlify.app) is a chat application where you can chat with your friends on a same room*
 
