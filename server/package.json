@@ -14,7 +14,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "heroku": "^7.42.3",
-    "urijs": "1.19.4",
+    "urijs": "1.19.11",
     "nodemon": "^2.0.4",
     "socket.io": "^2.4.0",
     "node-notifier": "8.0.1",
